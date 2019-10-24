@@ -39,6 +39,10 @@ namespace Listbox
            /* Colores.Add(TextoColor.Text);
             TextoColor.Text = ""; */
             ListaColores.ItemsSource = Colores;
+
+            Colores.Add(new Color(
+      txtColor.Text, txtHex.Text, txtRGB.Text));
+            txtColor.Text = "";
         }
 
          
