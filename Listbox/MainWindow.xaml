@@ -12,8 +12,13 @@
             <ListBoxItem>Opcion2</ListBoxItem>
             <ListBoxItem>Opcion3</ListBoxItem>-->
         </ListBox>
-        <TextBox x:Name="TextoColor" HorizontalAlignment="Left" Height="23" Margin="192,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextoColor" HorizontalAlignment="Left" Height="23" Margin="189,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="BotonNuevoColor" Content="Button" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top" Width="107" Height="23" Click="BotonNuevoColor_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="189,10,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="189,133,0,0" TextWrapping="Wrap" Text="RGB" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="189,69,0,0" TextWrapping="Wrap" Text="Hexadecimal" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextoColor2" HorizontalAlignment="Left" Height="23" Margin="189,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextoColor1" HorizontalAlignment="Left" Height="23" Margin="189,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
