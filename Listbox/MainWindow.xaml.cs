@@ -41,10 +41,33 @@ namespace Listbox
             ListaColores.ItemsSource = Colores;
 
             Colores.Add(new Color(
-      txtColor.Text, txtHex.Text, txtRGB.Text));
-            txtColor.Text = "";
+            TextoColor.Text, TextoHexadecimal.Text, TextoRGB.Text));
+            TextoColor.Text = "";
+            TextoHexadecimal.Text = "";
+            TextoRGB.Text = "";
         }
 
-         
+        private void BotonEliminar_Click(object sender, RoutedEventArgs e)
+        {
+          if  (ListaColores.SelectedIndex != -1)
+            {
+                Colores.RemoveAt(ListaColores.SelectedIndex);
+            }
+        }
+
+        private void ListaColores_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TextoColor_Editar.Text = Colores[ListaColores.SelectedIndex].Nombre;
+            TextoHexadecimal_Editar.Text = Colores[ListaColores.SelectedIndex].Nombre;
+            TextoRGB_Editar.Text = Colores[ListaColores.SelectedIndex].Nombre;
+        }
+
+        private void BotonActualizarColor_Click(object sender, RoutedEventArgs e)
+        {
+            if (ListaColores.SelectedIndex != -1) ;
+            {
+                Colores.
+            }
+        }
     }
 }
