@@ -68,12 +68,13 @@ namespace Listbox
 
         private void BotonActualizarColor_Click(object sender, RoutedEventArgs e)
         {
-            if (ListaColores.SelectedIndex != -1) ;
+            if (ListaColores.SelectedIndex != -1) 
             {
                 Colores[ListaColores.SelectedIndex].Nombre = TextoColor_Editar.Text;
                 Colores[ListaColores.SelectedIndex].Hexadecimal = TextoHexadecimal_Editar.Text;
                 Colores[ListaColores.SelectedIndex].RGB = TextoRGB_Editar.Text; 
             }
+            ListaColores.Items.Refresh();
         }
     }
 }
